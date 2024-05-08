@@ -1,0 +1,30 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet author="anil" id="1640802957604-4-4">
+        <comment>Adding categories</comment>
+        <insert dbms="mysql" tableName="categories">
+            <column name="id" value="34d807ce-a348-4f18-bbf6-99ba090bf012"/>
+            <column name="name" value="Spring Boot"/>
+            <column name="slug" value="spring-boot"/>
+            <column name="created_at" value="now()"/>
+            <column name="updated_at" value="now()"/>
+        </insert>
+        <insert dbms="mysql" tableName="categories">
+            <column name="id" value="34d807ce-a348-4f18-bbf6-99ba090bf013"/>
+            <column name="name" value="Java"/>
+            <column name="slug" value="java"/>
+            <column name="created_at" value="now()"/>
+            <column name="updated_at" value="now()"/>
+        </insert>
+        <insert dbms="mysql" tableName="categories">
+            <column name="id" value="34d807ce-a348-4f18-bbf6-99ba090bf014"/>
+            <column name="name" value="Design Pattern"/>
+            <column name="slug" value="design-pattern"/>
+            <column name="created_at" value="now()"/>
+            <column name="updated_at" value="now()"/>
+        </insert>
+    </changeSet><!-- categories -->
+</databaseChangeLog>

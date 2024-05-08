@@ -1,0 +1,26 @@
+### Create New Category
+POST http://localhost:8081/api/v1/categories
+Content-Type: application/json
+
+{
+  "name": "{{$random.alphabetic(10)}}"
+}
+
+### Get All Categories
+GET http://localhost:8081/api/v1/categories
+    ?next=0
+    &max={{$random.integer(100)}}
+
+### Get Category
+GET http://localhost:8081/api/v1/categories/hdjxRaFNZE
+
+### Update Category
+PATCH http://localhost:8081/api/v1/categories/hdjxRaFNZE
+Content-Type: application/json
+
+{
+  "name": "{{$random.alphabetic(10)}}"
+}
+
+### Delete Category
+DELETE http://localhost:8081/api/v1/categories/hdjxRaFNZE
