@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.kotlin.ir.backend.js.compile
 
 plugins {
     id("org.springframework.boot") version "3.2.5"
@@ -26,11 +27,11 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-cache")
     implementation("org.springframework.boot:spring-boot-starter-data-redis")
     implementation("redis.clients:jedis:3.3.0")
+    implementation("net.spy:spymemcached:2.12.3")
     implementation("org.liquibase:liquibase-core")
     implementation("com.github.gavlyukovskiy:datasource-proxy-spring-boot-starter:1.9.0")
     implementation("org.springframework.boot:spring-boot-starter-validation")
     runtimeOnly("org.postgresql:postgresql")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
 tasks.withType<KotlinCompile> {
