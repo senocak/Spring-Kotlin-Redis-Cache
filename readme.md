@@ -1,5 +1,26 @@
 # SpringBoot JPA Redis Cache
 
+## Requirements
+- Java 17
+- PostgreSQL
+- Redis
+
+## Configuration
+### Environment Variables
+#### PostgreSQL
+- SERVER_IP (default: localhost)
+- POSTGRESQL_PORT (default: 5432)
+- POSTGRESQL_DB (default: caching)
+- POSTGRESQL_SCHEMA (default: public)
+- POSTGRESQL_USER (default: postgres)
+- POSTGRESQL_PASSWORD (default: senocak)
+
+#### Redis
+- REDIS_HOST (default: localhost)
+- REDIS_PORT (default: 6379)
+- REDIS_PASSWORD (default: senocak)
+- REDIS_TIMEOUT (default: 300)
+
 ## API
 
 ### Create New Category
